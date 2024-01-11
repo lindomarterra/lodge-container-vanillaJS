@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Pacotes baixados-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!--Pacotes online-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!--arquivos css-->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/carousel01.css">
+    <link rel="stylesheet" href="../css/quemSomos.css">
+    <link rel="stylesheet" href="../css/galeriaFotos.css">
+    <link rel="stylesheet" href="../css/acomodacoes.css">
+    <link rel="stylesheet" href="../css/depoimentos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!--arquivo javascript-->
+    <script src="../script/index.js" defer ></script>
+
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+    <title>Villa Container Vanilla JS</title>
+
+</head>
+
+<body>
+
+    <!--HEADER COMPONENT-->
+<header>
+    <nav class="navbar navbar-expand-md px-2 ">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                <a class="nav-link active fw-semibold " aria-current="page" href="index.html" >Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-black-50 fw-semibold" href="#">A Pousada</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-black-50 fw-semibold" href="#">Acomodações</a>
+                </li>
+            </ul>
+
+            <div class="align-self-end ">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-black-50" aria-current="page" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-black-50" href="#">Minha Conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-black-50" href="#">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+</header>
+
+    <!--MAIN COMPONENTS-->
+<main>
+
+
+       <!--CAROUSEL COMPONENT-->
+<section class="position-relative m-1">
+
+    <div class="d-none d-md-flex">
+      <a href="index.html" target="_self" class="logo-carrousel" ><img src="../img/logo.webp" alt="img" class="w-50" /></a>
+    </div>
+
+    <div id="slide-home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../img/carousel-home01-lg.jpg" class="img-slide d-none d-md-block w-100 h-100" alt="img"/>
+          <img src="../img/carousel-home01-sm.jpg" class="img-slide d-md-none w-100 h-100" alt="img"/>
+        </div>
+
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="../img/carousel-home02-lg.jpg" class="d-none d-md-block w-100 h-100" alt="img"/>
+          <img src="../img/carousel-home02-sm.jpg" class="d-md-none w-100 h-100" alt="img"/>
+        </div>      
+        
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../img/carousel-home03-lg.jpg" class="img-slide d-none d-md-block w-100 h-100" alt="img"/>
+            <img src="../img/carousel-home03-sm.jpg" class="img-slide d-md-none w-100 h-100" alt="img"/>
+        </div>
+    
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../img/carousel-home04-lg.jpg" class="img-slide d-none d-md-block w-100 h-100" alt="img"/>
+            <img src="../img/carousel-home04-sm.jpg" class="img-slide d-md-none w-100 h-100" alt="img"/>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../img/carousel-home05-lg.jpg" class="img-slide d-none d-md-block w-100 h-100" alt="img"/>
+            <img src="../img/carousel-home05-sm.jpg" class="img-slide d-md-none w-100 h-100" alt="img"/>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../img/carousel-home06-lg.jpg" class="img-slide d-none d-md-block w-100 h-100" alt="img"/>
+            <img src="../img/carousel-home06-sm.jpg" class="img-slide d-md-none w-100 h-100" alt="img"/>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../img/carousel-home07-lg.jpg" class="img-slide d-none d-md-block w-100 h-100" alt="img"/>
+            <img src="../img/carousel-home07-sm.jpg" class="img-slide d-md-none w-100 h-100" alt="img"/>
+        </div>
+                
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#slide-home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next" type="button" data-bs-target="#slide-home" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+</section>
+
+
+
+        <!--QUEM SOMOS COMPONENT-->
+<section class="mb-4 py-4">
+        <div class="container-md">
+          <div class="mb-4">
+            <h5 class="text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0">
+              quem somos
+            </h5>
+            <small class="mt-0 pt-0 text-black-50">Saiba mais</small>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../img/quemsomospage.webp" alt="img" class="w-100 " />
+            </div>
+            <div class="col-lg-6">
+              <div class="p-3">
+
+                <h5 class="text-black-50 fw-bolder"> Pousada Villa Container Lodge: </h5>
+
+                <p class="fs-6 text-black-50">
+                  A Villa Container Lodge está situado no município de Capitólio
+                  MG. Ela possui uma localização privilegiada, tendo uma linda
+                  vista e acesso para a represa de Furnas.
+                </p>
+  
+
+                  <div class="fs-6 text-black-50 divParagraphHideShow" id="divParagraphHideShow">
+                        <p>
+                          Todos os quartos possuem banheiro privativo e completo e os
+                          quartos Luxo têm varanda com vistapara a lagoa e o nascer do
+                          sol.
+                        </p>
+                        <p>
+                          Alguns quartos (Quartos Luxo e Standart Casal) da pousada
+                          dispõem de mesa de trabalho ecafeteira Nespresso. Apenas os
+                          quartos Luxo possuem frigobar. Todos os quartos possuem
+                          arcondicionado e ventilador de teto.
+                        </p>
+                        <p>
+                          Servimos buffet de café da manhã e contamos com serviços
+                          adicionais como venda de bebidas (Cervejas, Refris, Sucos,
+                          Energéticos e Água), de petiscos e outros.
+                        </p>
+                        <p>
+                          A pousada fica em uma zona rural a 4,5 Km do centro de
+                          Capitólio, enquanto Passos está a 74 kmda propriedade.
+                        </p>
+                  </div>
+
+                  <small class="text-black-50 verMais" id="verMais" onclick="showParagraph()" >  ver mais...</small>
+                  <small class="text-black-50 verMenos" id="verMenos" onclick="hideParagraph()" > ver menos</small>
+
+              </div>
+
+              <div class="p-3">
+                <h4 class="text-black-50 fw-bolder">Comodidades:</h4>
+                <div class="fs-6 text-black-50">
+  
+                  <div class="d-blocl d-sm-none">
+                    <div class="">
+                        <ul class="ps-3">
+                          <li class="me-2 fs-6 pe-2">Animais permitido</li>
+                          <li class="me-2 fs-6 pe-2">Ar condicionado split</li>
+                          <li class="me-2 fs-6 pe-2">Café da manhã incluso</li>
+                          <li class="me-2 fs-6 pe-2">Esportes aquáticos</li>
+                          <li class="me-2 fs-6 pe-2">Estacionamento gratuito</li>
+                          <li class="me-2 fs-6 pe-2">wi-fi grátis</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block">
+                    <div class="row">
+                      <div class="col-6">
+                        <ul class="ps-1">
+                          <li class="me-2 pe-2">Animais permitido</li>
+                          <li class="me-2 pe-2">Ar condicionado split</li>
+                          <li class="me-2 pe-2">Café da manhã incluso</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul class="ps-1">
+                          <li class="me-2 pe-2">Esportes aquáticos</li>
+                          <li class="me-2 pe-2">Estacionamento gratuito</li>
+                          <li class="me-2 pe-2">wi-fi grátis</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+              <div>
+                <span class="fs-6 text-black-50 fw-semibold ">
+                    <i class="bi bi-clock-fill fs-5  me-2 "></i>
+                  Check-in: 15:00 | Check-out: 11:00
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+
+
+
+        <!--GALERIA DE FOTOS COMPONENTS-->
+<section class="mb-4 pb-4">
+      <div class="container-md">
+        <div class="mb-4">
+          <h5 class="text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0">
+            Galeria de fotos
+          </h5>
+          <small class="mt-0 pt-0 text-black-50"> Confira </small>
+        </div>
+
+        <div class="carousel carousel-fade" id="galeria-fotos">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+
+              <div class="d-flex justify-content-center align-items-center">
+
+                <p class="mx-2 trigger-slide fw-semibold active text-decoration-underline"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="0">
+                  Estrutura
+                </p>
+                <p class="mx-2 trigger-slide fw-semibold"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="1">
+                  Café da manhã
+                </p>
+                <p class="mx-2 trigger-slide fw-semibold"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="2">
+                  Atividades
+                </p>
+              </div>
+              <div class="row g-1">
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos01.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos02.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos03.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos04.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos05.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos06.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos07.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos08.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+                
+                
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center align-items-center">
+
+                <p class="mx-2 trigger-slide fw-semibold"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="0">
+                  Estrutura
+                </p>
+                <p class="mx-2 trigger-slide fw-semibold active text-decoration-underline"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="1">
+                  Café da manhã
+                </p>
+                <p class="mx-2 trigger-slide fw-semibold"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="2">
+                  Atividades
+                </p>
+              </div>
+              <div class="row g-1">
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos09.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos10.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos11.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos12.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos13.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos06.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos07.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos08.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+                
+                
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+              <div class="d-flex justify-content-center align-items-center">
+
+                <p class="mx-2 trigger-slide fw-semibold"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="0">
+                  Estrutura
+                </p>
+                <p class="mx-2 trigger-slide fw-semibold"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="1">
+                  Café da manhã
+                </p>
+                <p class="mx-2 trigger-slide fw-semibold active text-decoration-underline"
+                  data-bs-target="#galeria-fotos" data-bs-slide-to="2">
+                  Atividades
+                </p>
+              </div>
+              <div class="row g-1">
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos14.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos15.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos03.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos04.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos05.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos06.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos07.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 overflow-hidden">
+                  <img src="../img/galeriafotos08.webp" alt="img" class="d-block w-100 h-100 img-slide"/>
+                </div>
+                
+                
+              </div>
+
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+         <!--ACOMODAÇÕES COMPONETS-->
+<section class="mb-5 pb-5">
+      <div class="container-sm">
+
+        <div class="mb-4">
+          <h5 class="text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0">
+            Acomodações
+          </h5>
+          <small class="mt-0 pt-0 text-black-50">
+            Conheça nossas acomodações
+          </small>
+        </div>
+
+        <!--mobile-->
+        <div class="carousel slide d-sm-none" data-bs-ride="carousel" id="slide-acomodacoes-mobile">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+
+                <div class="col-12">
+                  <div class="d-flex flex-column text-center border border-1 border-black-50">
+                    <img
+                      src="../img/acomodacoes1.webp"
+                      alt="img"
+                      class="w-100 d-block"/>
+
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE LUXO SUPERIOR
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes2.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 "> SUÍTE LUXO TÉRREO </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes3.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      {" "}
+                      SUÍTE STANDART CASAL{" "}
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, ventilador de
+                      teto, cafeteira, wi-fi, banheiro privativo. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes4.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART DUPLO
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen bipartida, ar condicionado,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo.
+                      Capacidade 2 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src={acomodacoes5}
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART FAMILIA
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama de casal, beliche, ar condicionado,
+                      ventilador de teto, wi-fi, banheiro privativo.
+                      <br />
+                      Capacidade 4 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#slide-acomodacoes-mobile"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Prev</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#slide-acomodacoes-mobile"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+        <!--tablet-->
+        <div
+          class="carousel slide carousel-dark d-none d-sm-block d-lg-none "
+          data-bs-ride="carousel" id="slide-acomodacoes-tabled" >
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+
+                <div class="col-6">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes1.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE LUXO SUPERIOR
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex flex-column justify-content-between text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes2.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 "> SUÍTE LUXO TÉRREO </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-6">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes2.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 "> SUÍTE LUXO TÉRREO </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes3.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART CASAL
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, ventilador de
+                      teto, cafeteira, wi-fi, banheiro privativo. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-6">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes3.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART CASAL
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, ventilador de
+                      teto, cafeteira, wi-fi, banheiro privativo. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes4.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART DUPLO
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen bipartida, ar condicionado,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo.
+                      Capacidade 2 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-6">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes4.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART DUPLO
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen bipartida, ar condicionado,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo.
+                      Capacidade 2 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes5.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART FAMILIA
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama de casal, beliche, ar condicionado,
+                      ventilador de teto, wi-fi, banheiro privativo.
+                      <br />
+                      Capacidade 4 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5">
+            <div class="carousel-indicators ">
+              <button
+                type="button"
+                data-bs-target="#slide-acomodacoes-tabled"
+                data-bs-slide-to="0"
+                class="active bg-black-50"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slide-acomodacoes-tabled"
+                data-bs-slide-to="1"
+                class="bg-black-50"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slide-acomodacoes-tabled"
+                data-bs-slide-to="2"
+                class="bg-black-50"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slide-acomodacoes-tabled"
+                data-bs-slide-to="3"
+                class="bg-black-50"
+              ></button>
+            </div>
+          </div>
+
+        </div>
+
+        <!--desktop-->
+        <div
+          class="carousel slide carousel-dark d-none w-100 d-lg-block "
+          data-bs-ride="carousel"
+          id="slide-acomodacoes"
+        >
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes1.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE LUXO SUPERIOR
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="d-flex flex-column justify-content-between text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes2.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 "> SUÍTE LUXO TÉRREO </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes3.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART CASAL
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, ventilador de
+                      teto, cafeteira, wi-fi, banheiro privativo. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes2.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 "> SUÍTE LUXO TÉRREO </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama casal queen, ar condicionado, frigobar,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo,
+                      vista para a lagoa e varanda exclusiva. Capacidade 2
+                      pessoas
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes3.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART CASAL
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, ventilador de
+                      teto, cafeteira, wi-fi, banheiro privativo. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes4.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART DUPLO
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen bipartida, ar condicionado,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo.
+                      Capacidade 2 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes3.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART CASAL
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen, ar condicionado, ventilador de
+                      teto, cafeteira, wi-fi, banheiro privativo. Capacidade 2
+                      pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes4.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART DUPLO
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      1° andar, cama casal queen bipartida, ar condicionado,
+                      ventilador de teto, cafeteira, wi-fi, banheiro privativo.
+                      Capacidade 2 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="d-flex flex-column text-center border border-1 border-blck-50">
+                    <img
+                      src="../img/acomodacoes5.webp"
+                      alt="img"
+                      class="w-100 d-block"
+                    />
+                    <h5 class="my-3 text-black-50 ">
+                      SUÍTE STANDART FAMILIA
+                    </h5>
+                    <p class="truncar-3l text-black-50 p-2">
+                      Térreo, cama de casal, beliche, ar condicionado,
+                      ventilador de teto, wi-fi, banheiro privativo.
+                      <br />
+                      Capacidade 4 pessoas.
+                    </p>
+
+                    <button
+                      type="button"
+                      class="rounded-5 mx-4 mb-3 p-2 fw-bolder border border-2 border-light btn-detalhes"
+                    >
+                      DETALHES
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-5">
+            <div class="carousel-indicators ">
+              <button
+                type="button"
+                data-bs-target="#slide-acomodacoes"
+                data-bs-slide-to="0"
+                class="active bg-black-50"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slide-acomodacoes"
+                data-bs-slide-to="1"
+                class="bg-black-50"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slide-acomodacoes"
+                data-bs-slide-to="2"
+                class="bg-black-50"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+</section>
+
+
+
+        <!--DEPOIMENTOS COMPONENTS-->
+<section class="mb-5 pb-5">
+  <div class="container-sm">
+
+    <div class="mb-4">
+      <h5 class="text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0">
+        Depoimentos
+      </h5>
+      <small class="mt-0 pt-0 text-black-50">
+        Depoimentos de nossos hospedes!
+      </small>
+    </div>
+
+        <!--mobile-->
+    <div class="carousel slide w-100 d-md-none mb-4"
+      data-bs-ride="carousel" id="slide-depoimentos-desktop">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="position-relative">
+            <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+              <i class="bi bi-quote"></i>            
+              <p class="txtParagraph" >
+                Desde a arquitetura, a limpeza, a decoração, o lago
+                maravilhoso que fica em frente à pousada com stand up e boia
+                para você aproveitar...até o café da manhã...e
+                principalmente o carinho do Thiago, que é o dono. A estadia
+                foi maravilhosa e contribuiu para que nossas férias e nossa
+                experiência em Capitólio fosse inesquecível.
+              </p>              
+            </div>
+            <h6 class="text-end mt-1 txtNome"> Ingrid </h6>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="position-relative">
+            <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+              <i class="bi bi-quote"></i>
+              <p class="txtParagraph">
+                O local é muito aconchegante, o quarto é ótimo, tem
+                ventilador de teto e ar condicionado , a cama éconfortável o
+                chuveiro é sensacional, ... o dono do local Tiago é muito
+                atencioso , deu suporte o tempo todo , indicou passeios ...
+                Sem dúvidas se voltarmos a Capitólio ficaremos aqui...
+              </p>        
+            </div>
+            <h6 class="text-end mt-1 txtNome"> Jamile </h6>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="position-relative">
+            <div
+              class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+              <i class="bi- bi-quote "></i>
+              <p class="txtParagraph">
+                Cama e banheiro perfeitos!!! Localização calma e tranquila
+                e o conceito da pousada de se desligar da correria é um
+                presente extra !!! A beleza e simplicidade que o mundo
+                moderno esta nos roubando estava presente em todos os
+                detalhes.A lagoa, a pesca, a noite estrelada, as redes e a
+                tranquilidade foram simplesmente brilhante !!!O Atendimento
+                do Thiago e equipe foi cordial , educado, prestativo e muito
+                atencioso com minha filha, minha irmã e meus pais...Vamos
+                voltar com certeza absoluta!!.
+              </p>              
+            </div>
+            <h6 class="text-end mt-1 txtNome"> Juliana </h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <!--desktop-->
+    <div class="carousel slide d-none w-100 d-md-block mb-5" data-bs-ride="carousel" id="slide-depoimentos-desktop">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="row">
+
+            <div class="col-6">
+              <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+                <i class="bi bi-quote"></i>               
+                <p class="txtParagraph"> 
+                  Desde a arquitetura, a limpeza, a decoração, o lago
+                  maravilhoso que fica em frente à pousada com stand up e
+                  boia para você aproveitar...até o café da manhã...e
+                  principalmente o carinho do Thiago, que é o dono. A
+                  estadia foi maravilhosa e contribuiu para que nossas
+                  férias e nossa experiência em Capitólio fosse
+                  inesquecível.
+                </p>
+              </div>
+              <h6 class="text-end mt-1 txtNome"> Ingrid </h6>
+            </div>
+
+            <div class="col-6">
+              <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+                <i class="bi bi-quote"></i>  
+                <p class="txtParagraph">
+                  O local é muito aconchegante, o quarto é ótimo, tem
+                  ventilador de teto e ar condicionado , a cama éconfortável
+                  o chuveiro é sensacional, ... o dono do local Tiago é
+                  muito atencioso , deu suporte o tempo todo , indicou
+                  passeios ... Sem dúvidas se voltarmos a Capitólio
+                  ficaremos aqui...
+                </p>                
+              </div>
+              <h6 class="text-end mt-1 txtNome"> Jamila </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000">
+          <div class="row">
+
+            <div class="col-6">
+              <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+                <i class="bi bi-quote"></i>  
+                <p class="txtParagraph" >
+                  O local é muito aconchegante, o quarto é ótimo, tem
+                  ventilador de teto e ar condicionado , a cama éconfortável
+                  o chuveiro é sensacional, ... o dono do local Tiago é
+                  muito atencioso , deu suporte o tempo todo , indicou
+                  passeios ... Sem dúvidas se voltarmos a Capitólio
+                  ficaremos aqui...
+                </p>          
+              </div>
+              <h6 class="text-end mt-1 txtNome"> Jamila </h6>
+            </div>
+
+            <div class="col-6">
+              <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+                <i class="bi bi-quote"></i>  
+                <p class="txtParagraph">
+                  Cama e banheiro perfeitos!!! Localização calma e
+                  tranquila e o conceito da pousada de se desligar da
+                  correria é um presente extra !!! A beleza e simplicidade
+                  que o mundo moderno esta nos roubando estava presente em
+                  todos os detalhes.A lagoa, a pesca, a noite estrelada, as
+                  redes e a tranquilidade foram simplesmente brilhante !!!O
+                  Atendimento do Thiago e equipe foi cordial , educado,
+                  prestativo e muito atencioso com minha filha, minha irmã e
+                  meus pais...Vamos voltar com certeza absoluta!.
+                </p>               
+              </div>
+              <h6 class="text-end mt-1 txtNome"> Juliana </h6>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <!--btn call modal-->
+    <div class="text-end">
+      <button
+        class="btnVerTodos fw-bold border-0 px-3 py-2 rounded-1"
+        data-bs-toggle="modal" data-bs-target="#modal-depoimentos">
+        Ver Todos
+      </button>
+    </div>
+
+        <!--modal-->
+    <div class="modal fade" id="modal-depoimentos">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <div class="mb-3 ps-2">
+              <h5 class="text-black-50 fw-bolder py-2 text-uppercase mb-0 pb-0">
+                Depoimentos
+              </h5>
+              <small class="mt-0 pt-0 text-black-50">
+                Depoimentos de nossos hospedes!
+              </small>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="py-4 mx-0">
+              <div class="mb-5 position-relative">
+                <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+                  <i class="bi- bi-quote" ></i>
+                  <p class="txtParagraph">
+                    Desde a arquitetura, a limpeza, a decoração, o lago
+                    maravilhoso que fica em frente à pousada com stand up e
+                    boia para você aproveitar...até o café da manhã...e
+                    principalmente o carinho do Thiago, que é o dono. A
+                    estadia foi maravilhosa e contribuiu para que nossas
+                    férias e nossa experiência em Capitólio fosse
+                    inesquecível.
+                  </p>                  
+                </div>
+                <h6 class="text-end mt-1 txtNome"> Ingrid </h6>
+              </div>
+
+              <div class="mb-5 position-relative">
+                <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto">
+                <i class="bi bi-quote"></i>
+                  <p class="txtParagraph">
+                    O local é muito aconchegante, o quarto é ótimo, tem
+                    ventilador de teto e ar condicionado , a cama
+                    éconfortável o chuveiro é sensacional, ... o dono do
+                    local Tiago é muito atencioso , deu suporte o tempo todo
+                    , indicou passeios ... Sem dúvidas se voltarmos a
+                    Capitólio ficaremos aqui...
+                  </p>               
+                </div>
+                <h6 class="text-end mt-1 txtNome"> Jamila </h6>
+              </div>
+
+              <div class="mb-5 position-relative">
+                <div class="txt-comment border border-3 rounded-3 p-4 overflow-y-auto ">
+                 <i class="bi bi-quote"></i>
+                  <p class="txtParagraph">
+                    Cama e banheiro perfeitos !!!Localização calma e
+                    tranquila e o conceito da pousada de se desligar da
+                    correria é um presente extra !!! A beleza e simplicidade
+                    que o mundo moderno esta nos roubando estava presente em
+                    todos os detalhes.A lagoa, a pesca, a noite estrelada,
+                    as redes e a tranquilidade foram simplesmente brilhante
+                    !!!O Atendimento do Thiago e equipe foi cordial ,
+                    educado, prestativo e muito atencioso com minha filha,
+                    minha irmã e meus pais...Vamos voltar com certeza
+                    absoluta!!
+                  </p>                
+                </div>
+                <h6 class="text-end mt-1 txtNome"> Juliana </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="model-footer">
+              <div class="text-center m-4 ">
+                <button class="btn bg-dark px-5 opacity-75 text-white fw-bolder shadow-sm" data-bs-dismiss="modal">
+                  Fechar
+                </button>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+        <!--GOOGLE MAPS COMPONENTS-->
+<section class='mx-1 '>
+            
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.272808976877!2d-46.06799692556505!3d-20.57691378096169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b419ab619588af%3A0x70b4cfe75917235a!2sPousada%20Villa%20Container%20Lodge%20-%20Capit%C3%B3lio!5e0!3m2!1sen!2sbr!4v1703192718433!5m2!1sen!2sbr" 
+  title='Responsive Google map'
+  width="100%" 
+  height="400px" 
+  allowfullscreen
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+</section>
+
+
+</main>
+
+
+<footer class="py-5">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="p-2 ">
+          <small class="fw-bold"> POUSADA VILLA CONTAINER LODGE </small>
+          <small class="text-black-50"> CNPJ:31.707.370/0001-97 </small>
+          <div>
+            <IoMdStar class="text-warning fs-5" />
+            <IoMdStar class="text-warning fs-5" />
+            <IoMdStar class="text-warning fs-5" />
+            <IoMdStar class="text-warning fs-5" />
+            <IoMdStar class="text-black-50 fs-5 opacity-25" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-2 ">
+          <p>
+            <a to="/contato" target="_self" class="pt-1 text-black-50 reservasHover">
+              <MdOutlineEmail className="fs-4 me-1 text-black-50" />
+              <small>reservas@villacontainerlodge.com.br</small>
+            </a>
+          </p>
+
+          <p>
+            <Link
+              to="https://api.whatsapp.com/send?phone=55037999252346"
+              target="_blank"
+              className="ms-2 zapHover text-black-50"
+            >
+              <BsFillTelephoneFill className="fs-5 me-1 text-black-50" />
+              <small> Whatsapp: +55 (03) 7 9992-5234 </small>
+            </Link>
+          </p>
+        </div>
+      </div>
+
+      <div className="col-md-6 col-lg-4">
+        <Link
+          to="https://maps.app.goo.gl/A6jUJmFgr93s2Z5R7"
+          target="_blank"
+          className="googlemapsHover p-2 d-flex align-items-center text-black-50"
+        >
+          <FaLocationDot className="me-2 fs-3 text-black-50" />
+          <div className="text-black-50">
+            <small> Estrada Macaúbas, Km 1.5, Centro </small> <br />
+            <small>Capitólio, Minas Gerais, Brasil</small> <br />
+            <small>CEP: 37.930-000</small>
+          </div>
+        </Link>
+      </div>
+    </div>
+
+    <div className="p-5 text-center">
+      <Link
+        to="https://www.instagram.com/villacontainerlodge/"
+        target="_blank"
+      >
+        <span className="m-1 p-4 rounded-2 instaHover">
+          <CgInstagram className="fs-4 text-black " />
+        </span>
+      </Link>
+      <Link
+        to="https://www.youtube.com/watch?v=QuKttjrE1Jc"
+        target="_blank"
+      >
+        <span className="m-1 p-4 rounded-2 youTubeHover">
+          <TfiYoutube className="fs-4 text-black " />
+        </span>
+      </Link>
+      <Link
+        to="https://www.tripadvisor.com.br/Hotel_Review-g1773682-d15137602-Reviews-Pousada_Villa_Container_Lodge-Capitolio_State_of_Minas_Gerais.html"
+        target="_blank"
+      >
+        <span className="m-1 p-4 rounded-2 tripHover">
+          <SiTripadvisor className="fs-4 text-black " />
+        </span>
+      </Link>
+    </div>
+  </div>
+</footer>

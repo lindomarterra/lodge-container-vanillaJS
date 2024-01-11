@@ -1,0 +1,15 @@
+.divParagraphHideShow{
+    display: none;
+}
+
+.verMais, .verMenos{
+    cursor: pointer;
+}
+
+.verMenos{
+    display: none;
+}
+
+.verMais:hover, .verMenos:hover{
+    text-decoration: underline;
+}

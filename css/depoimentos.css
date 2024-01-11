@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.txt-comment{
+    height: 175px;
+    color: #0701018f; 
+    cursor: pointer; 
+    position: relative;
+}
+
+.txt-comment::-webkit-scrollbar{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #22222246;
+  width: 10px;
+  max-height: 10px;
+}
+.txt-comment::-webkit-scrollbar-thumb{
+  background-color: #fff;
+  max-height: 10px;
+  border-radius: 10px;
+}
+
+
+.btnVerTodos{
+    background-color: rgba(183, 193, 194, 0.26);
+    color: #222222a6;
+    border: 1px solid #a8a2a225;
+    font-variant: small-caps;
+    transition: all 0.5s linear;
+  }
+  
+  .btnVerTodos:hover{
+    color: rgb(220, 227, 228);
+    background-color: #22222288;
+  }
+
+  .txtParagraph{
+    font-family: 'Indie Flower', cursive;
+    opacity: 85%;
+    padding: 1rem;
+  }
+
+  .txtNome{
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    opacity: 65%;
+  }
+
+  .bi-quote{
+    position: absolute;    
+    font-size: 3.5rem;
+    opacity: 50%;
+    top: -20px ;
+    left: 0;
+}
+  

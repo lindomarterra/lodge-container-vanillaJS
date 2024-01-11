@@ -1,0 +1,11 @@
+.logoNavbar{
+    width: 55px;
+    height: 65px;
+}
+.nav-link{
+    font-size: 0.8rem;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
