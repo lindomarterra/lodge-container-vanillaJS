@@ -26,19 +26,11 @@
     text-decoration: underline;
   }
   
-  .youTubeHover {
+  .youTubeHover, .instaHover,  .tripHover {
     background-color: silver;
-    cursor: pointer;
+    cursor: pointer;   
   }
-  .instaHover {
-    background-color: silver;
-    cursor: pointer;
-  }
-  .tripHover {
-    background-color: silver;
-    cursor: pointer;
-  }
-  
+
   .instaHover:hover {
     background-image: linear-gradient(to top, yellow, rgba(255, 0, 0, 0.836));
   }
@@ -47,4 +39,8 @@
   }
   .tripHover:hover {
     background-color: aqua;
+  }
+
+  .copyright{
+    background-color: #222222bd;
   }
