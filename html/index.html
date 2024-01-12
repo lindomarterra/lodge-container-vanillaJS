@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="../css/acomodacoes.css">
     <link rel="stylesheet" href="../css/depoimentos.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
 
     <!--arquivo javascript-->
     <script src="../script/index.js" defer ></script>
@@ -37,48 +39,51 @@
 
     <!--HEADER COMPONENT-->
 <header>
-    <nav class="navbar navbar-expand-md px-2 ">
-        <div class="container-fluid">
+  <nav class="navbar navbar-expand-md px-2 ">
+    <div class="container-fluid">
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
+      <img src="../img/logo.webp" alt="img" class="logoHeader me-2">      
 
-            <ul class="navbar-nav flex-grow-1">
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+            <a class="nav-link active fw-semibold " aria-current="page" href="index.html" >Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-black-50 fw-semibold" href="#">A Pousada</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-black-50 fw-semibold" href="#">Acomodações</a>
+            </li>
+        </ul>
+
+        <div class="align-self-end ">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active fw-semibold " aria-current="page" href="index.html" >Home</a>
+                    <a class="nav-link fw-semibold text-black-50" aria-current="page" href="#">Contato</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-black-50 fw-semibold" href="#">A Pousada</a>
+                    <a class="nav-link fw-semibold text-black-50" href="#">Minha Conta</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-black-50 fw-semibold" href="#">Acomodações</a>
+                    <a class="nav-link fw-semibold text-black-50" href="#">Sobre</a>
                 </li>
             </ul>
-
-            <div class="align-self-end ">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-black-50" aria-current="page" href="#">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-black-50" href="#">Minha Conta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-black-50" href="#">Sobre</a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-
         </div>
-      </nav>
+      </div>
+
+    </div>
+  </nav>
 </header>
 
+
     <!--MAIN COMPONENTS-->
-<main>
+<main style="margin-top: 83px;" >
 
 
        <!--CAROUSEL COMPONENT-->
@@ -1335,7 +1340,7 @@
       <button
         class="btnVerTodos fw-bold border-0 px-3 py-2 rounded-1"
         data-bs-toggle="modal" data-bs-target="#modal-depoimentos">
-        Ver Todos
+        <span class="txtNome">Ver Todos</span>
       </button>
     </div>
 
@@ -1441,7 +1446,34 @@
 </section>
 
 
+
+
+
+
+
+
+    <!--ASIDE COMPONENT-->
+<aside>
+
+  <!--btn Whatsapp-->
+  <abbr title="reserve pelo whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=55037999252346" target="_blank" 
+       class="position-fixed start-0 bottom-0 bg-success px-2 rounded-5 m-1"> 
+      <i class="bi bi-whatsapp text-light"></i>
+    </a>
+  </abbr>
+
+
+
+</aside>
+
+
+
+
+
 </main>
+
+
 
 
 <footer class="pt-5 mb-0">
@@ -1498,18 +1530,18 @@
 
     <div class="p-5 text-center">
 
-      <a href="https://www.instagram.com/villacontainerlodge/" target="_blank"  class="text-decoration-none" >
-          <i class="bi bi-instagram p-4 rounded-2 instaHover fs-4 text-black"></i>
+      <a href="https://www.instagram.com/villacontainerlodge/" target="_blank"  class="instaHover p-4 rounded-2">
+          <i class="bi bi-instagram text-black fs-3"></i>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=QuKttjrE1Jc" target="_blank"  class="text-decoration-none" >
-          <i class="bi bi-youtube p-4 rounded-2 youTubeHover fs-4 text-black"></i>
+      <a href="https://www.youtube.com/watch?v=QuKttjrE1Jc" target="_blank"  class="youTubeHover p-4 rounded-2 mx-1">
+          <i class="bi bi-youtube text-black fs-3"></i>
       </a>
 
       <a 
       href="https://www.tripadvisor.com.br/Hotel_Review-g1773682-d15137602-Reviews-Pousada_Villa_Container_Lodge-Capitolio_State_of_Minas_Gerais.html"
-        target="_blank" class="text-decoration-none" >
-          <i class="fa fa-tripadvisor p-4 rounded-2 tripHover fs-4 text-black"></i>
+        target="_blank" class="tripHover p-4 rounded-2">
+          <i class="fa fa-tripadvisor text-black fs-3"></i>
       </a>
     </div>
 

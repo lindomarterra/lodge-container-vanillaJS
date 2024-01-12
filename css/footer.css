@@ -28,7 +28,8 @@
   
   .youTubeHover, .instaHover,  .tripHover {
     background-color: silver;
-    cursor: pointer;   
+    text-decoration: none;
+    cursor: pointer;       
   }
 
   .instaHover:hover {

@@ -1,5 +1,13 @@
-.logoNavbar{
-    width: 55px;
+header{
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.logoHeader{
+    width: 65px;
     height: 65px;
 }
 .nav-link{
