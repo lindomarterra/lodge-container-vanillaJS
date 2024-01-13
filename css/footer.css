@@ -1,5 +1,6 @@
-.footer{
-    background-color: whitesmoke;
+footer{
+    background-color: snow;
+    padding-top: 50px;
 }
 
 .zapHover {
@@ -10,14 +11,7 @@
     text-decoration: underline;
     opacity: 70%;
   }
-  .reservasHover{
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .reservasHover:hover {
-    text-decoration: underline;
-  }
-  
+   
   .googlemapsHover{
     cursor: pointer;
     text-decoration: none;
