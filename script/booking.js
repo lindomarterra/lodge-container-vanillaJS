@@ -1,4 +1,3 @@
-
 function showCalendar(){
     document.getElementById('arrowdowncalendar').style.display='none'
     document.getElementById('arrowupcalendar').style.display='block'
@@ -17,4 +16,14 @@ function showHospedes(){
 function hideHospedes(){
     document.getElementById('arrowdownhospedes').style.display='block'
     document.getElementById('arrowuphospedes').style.display='none'
+}
+
+function showCupom(){
+    document.getElementById('arrowupcupom').style.display='block'   
+    document.getElementById('arrowdowncupom').style.display='none'
+}
+
+function hideCupom(){
+    document.getElementById('arrowdowncupom').style.display='block'
+    document.getElementById('arrowupcupom').style.display='none'   
 }

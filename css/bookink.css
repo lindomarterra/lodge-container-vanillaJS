@@ -2,20 +2,21 @@
     background-color: #22222267;
 }
 
-.arrowdownCalendar{
+.arrowdownCalendar, .arrowdownHospedes, .arrowdownCupom{
     cursor: pointer;
 }
 
-.arrowupCalendar{
+.arrowupCalendar,.arrowupHospedes, .arrowupCupom{
     cursor: pointer;
     display: none;
 }
 
-.arrowdownHospedes{
+.enviarHover{
     cursor: pointer;
+    transition: all 0.3s linear;
+}
+.enviarHover:hover{
+    font-size: 1.2rem;
 }
 
-.arrowupHospedes{
-    cursor: pointer;
-    display: none;
-}
+
