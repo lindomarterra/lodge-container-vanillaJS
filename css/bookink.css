@@ -1,3 +1,21 @@
 .formulario{
     background-color: #22222267;
 }
+
+.arrowdownCalendar{
+    cursor: pointer;
+}
+
+.arrowupCalendar{
+    cursor: pointer;
+    display: none;
+}
+
+.arrowdownHospedes{
+    cursor: pointer;
+}
+
+.arrowupHospedes{
+    cursor: pointer;
+    display: none;
+}
